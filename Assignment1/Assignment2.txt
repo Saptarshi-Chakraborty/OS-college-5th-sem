@@ -1,0 +1,87 @@
+
+
+	//Task 1: create the following directory structure under the login directory
+                                        
+                                        /home/fiem
+                                             |
+     --------------------------------------------------------------------------------------
+     |                  |                    |                    |                       |
+   /CSE               /ECE                  /IT                /CSEDS                    /EE
+
+	$ mkdir CSE ECE IT CSEDS EE
+
+
+	//Task 2: Create 4 text files using a single command under /CSE subdirectory by sitting under the login directory
+
+	$ touch ./CSE/file1.txt ./CSE/file2.txt ./CSE/file3.txt ./CSE/file4.txt
+
+
+	// Task 3: copy a file named shellprog.c under the subdirectory /CSEDS to subdirectory /ECE by sitting under the /IT subdirectory.
+
+	$ touch ./CSEDS/shellprog.c
+	$ cd IT/
+	$ cp ../CSEDS/shellprog.c ../ECE/shellprog.c
+
+
+	//Task 4: Delete a file named mydoc.txt under subdir /CSEDS by sitting under your login directory.
+
+	$ cd ..
+	$ touch ./CSEDS/mydoc.txt
+	$ rm ./CSEDS/mydoc.txt
+
+
+	// Task 5: Rename a file named helloworld.c to modified_helloworld.c in subdir /ECE
+
+	$ touch ./ECE/helloworld.c
+	$ mv ./ECE/helloworld.c ./ECE/modified_helloworld.c
+
+
+	// Task 6: Display all the files with extension .c under the subdir /CSE by sitting under your login directory.
+
+	$ ls CSE/*.c
+
+
+	// Task 7: Display all files which starts with character 'a' & ends with 'd' (assume filename length of 5 charecters) in subdirectory /EE.
+
+	$ ls ./EE/a???d.*
+
+
+	// Task 8: Change the file acces permission of file modified_helloworld.c from its default FAP to 766 by sitting under /FIEM subdirectory.
+
+	$ chmod 766 ./ECE/modified_helloworld.c
+
+
+	// Task 9: Delete all the directory stucture.
+	
+	$ rm -rf CSE/ ECE/ IT/ CSEDS/ EE/
+
+
+
+
+-----------------------------------------------------------
+
+1. create the following directory structure under the login directory
+                                        
+                                        /home/fiem
+                                             |
+     --------------------------------------------------------------------------------------
+     |                  |                    |                    |                       |
+   /CSE               /ECE                  /IT                /CSEDS                    /EE
+
+2. Create 4 text files using a single command under /CSE subdirectory by sitting under the login directory
+
+3. copy a file named shellprog.c under the subdirectory /CSEDS to subdirectory /ECE by sitting under the /IT subdirectory.
+
+4. Delete a file named mydoc.txt under subdir /CSEDS by sitting under your login directory.
+
+5. Rename a file named helloworld.c to modified_helloworld.c in subdir /ECE
+
+6. Display all the files with extension .c under the subdir /CSE by sitting under your login directory.
+
+7. Display all files which starts with character 'a' & ends with 'd' (assume filename length of 5 charecters) in subdirectory /EE.
+
+8. Change the file acces permission of file modified_helloworld.c from its default FAP to 766 by sitting under /FIEM subdirectory.
+
+9. Delete all the directory stucture.
+
+
